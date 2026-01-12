@@ -25,7 +25,7 @@ export default function SidebarSubmenu({ activeMenuId, onClose }) {
             key={item.id}
             onClick={() => {
               navigate(item.route)
-              onClose?.() // ✅ SAFE CALL
+              // onClose?.() // ✅ SAFE CALL
             }}
             className={`
               flex items-center gap-3 px-3 py-2 rounded-lg cursor-pointer
